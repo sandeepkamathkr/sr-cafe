@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <div fxHide.gt-xs>
+    <button (click)="onToggleSideNav()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div><a routerLink="/">Logo</a></div>
+  <div fxFlex="1 1 0%" fxLayout fxLayoutAlign="space-around" fxHide.xs>
+    <ul fxLayout fxLayoutGap="40px">
+      <li><a routerLink="/menu">Menu</a></li>
+      <li><a routerLink="/about-us">About Us</a></li>
+      <li><a routerLink="/catering">Catering</a></li>
+      <li><a routerLink="/order-online">Order Online</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a>Logout</a></li>
+    </ul>
+  </div>
+</mat-toolbar>
